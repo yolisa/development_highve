@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Getting Started - Intro To Rails</title>
+<script src="/assets/application.js"></script><link href="/assets/application.css" rel="stylesheet">
+</head>
+<body>
+<nav class="top cf" role="navigation"><div class="navbar-header cf title"><a href="/intro-to-rails"><span class="brand">RailsBridge </span>Intro To Rails</a></div>
+<ul class="navbar-nav nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="/flags/US.png"></a><ul class="flags dropdown-menu">
+<li><a href="http://docs.railsbridge.org"><img src="/flags/US.png"></a></li>
+<li><a href="http://es.railsbridge.org"><img src="/flags/ES.png"></a></li>
+<li><a href="http://zh-tw.railsbridge.org"><img src="/flags/ZH-TW.png"></a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">sites</a><ul class="dropdown-menu">
+<li class="category">Setup</li>
+<li><a href="/installfest/">Installfest</a></li>
+<li class="category">Rails</li>
+<li class="current">Intro To Rails</li>
+<li><a href="/job-board/">Job Board</a></li>
+<li><a href="/message-board/">Message Board</a></li>
+<li class="category">Frontend</li>
+<li><a href="/frontend/">Frontend</a></li>
+<li><a href="/javascript-snake-game/">Javascript Snake Game</a></li>
+<li><a href="/javascript-to-do-list/">Javascript To Do List</a></li>
+<li><a href="/javascript-to-do-list-with-react/">Javascript To Do List With React</a></li>
+<li class="category">Ruby</li>
+<li><a href="/learn-to-code/">Learn To Code</a></li>
+<li><a href="/ruby/">Ruby</a></li>
+<li class="category">Other stuff</li>
+<li><a href="/docs/">Docs</a></li>
+<li><a href="/workshop/">Workshop</a></li>
+</ul>
+</li>
+<li class="show-when-small"><a data-toggle-selector="#table_of_contents" href="#">toc</a></li>
+<li class="hidden-sm"><a href="getting_started/src">src</a></li>
+<li class="hidden-sm"><a href="https://github.com/railsbridge/docs/blob/master/sites/en/intro-to-rails/getting_started.step">git</a></li>
+</ul></nav><div class="toc page-list" id="table_of_contents">
+<ul>
+<li class=""><a href="/intro-to-rails/intro-to-rails">Intro To Rails</a></li>
+<li class=""><a href="/intro-to-rails/ruby_language">Ruby Language</a></li>
+<li class=""><span class="current">Getting Started</span></li>
+<li class=""><a href="/intro-to-rails/add_the_project_to_a_git_repo">Add The Project To A Git Repo</a></li>
+<li class=""><a href="/intro-to-rails/running_your_application_locally">Running Your Application Locally</a></li>
+<li class="collapsable closed">
+<a href="/intro-to-rails/creating_a_migration"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Creating A Migration</a><ul><li class=""><a href="/intro-to-rails/rails_architecture">Rails Architecture</a></li></ul>
+</li>
+<li class=""><a href="/intro-to-rails/CRUD_with_scaffolding">CRUD With Scaffolding</a></li>
+<li class=""><a href="/intro-to-rails/setting_the_default_page">Setting The Default Page</a></li>
+<li class=""><a href="/intro-to-rails/voting_on_topics">Voting On Topics</a></li>
+<li class=""><a href="/intro-to-rails/hooking_up_votes_and_topics">Hooking Up Votes And Topics</a></li>
+<li class=""><a href="/intro-to-rails/allow_people_to_vote">Allow People To Vote</a></li>
+<li class=""><a href="/intro-to-rails/redirect_to_the_topics_list_after_creating_a_new_topic">Redirect To The Topics List After Creating A New Topic</a></li>
+<li class=""><a href="/intro-to-rails/make_the_topic_title_a_link">Make The Topic Title A Link</a></li>
+<li class=""><a href="/intro-to-rails/clean_up_links_on_the_topics_list">Clean Up Links On The Topics List</a></li>
+<li class=""><a href="/intro-to-rails/credits_and_next_steps">Credits And Next Steps</a></li>
+</ul>
+<h1>Other Pages</h1>
+<ul>
+<li class=""><a href="/intro-to-rails/deploying_to_heroku">Deploying To Heroku</a></li>
+<li class=""><a href="/intro-to-rails/deploying_to_heroku_again">Deploying To Heroku Again</a></li>
+<li class=""><a href="/intro-to-rails/glossary">Glossary</a></li>
+</ul>
+<span class="expand-all"><i class="fa fa-arrows-alt"></i>Expand All</span>
+</div>
+<main><h1 class="doc_title">Getting Started</h1>
+<div class="doc">
+<img alt="Screenshot of a Ruby on Rails default home page" src="img/Start_page.png"><div class="goals">
+<h1>Goals</h1>
+<ul>
+<li><div class="message">
+<p>Create Your New Application</p>
+</div></li>
+<div class="message">
+<p>Let's get started! By the end of this step, we'll have a brand-spankin'-new (empty) Rails app.</p>
+</div>
+</ul>
+</div>
+<div class="steps">
+<h1>Steps</h1>
+<blockquote>
+<div class="message tip vertical-centerer">
+<i class="fa fa-info-circle fa-3x"></i><div class="vertically-centered">
+<p>If you have any problems, call over a TA.</p>
+</div>
+</div>
+<a name="step1"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4007" name="big_checkbox_4007" type="checkbox" value="valuable"><label for="big_checkbox_4007"></label><span class="prefix">Step 1</span>
+</h1>
+<blockquote>
+<div class="message">
+<p><code>cd</code> stands for <strong>c</strong>hange <strong>d</strong>irectory.</p>
+</div>
+<div class="message">
+<p>A directory is the same thing as a folder.</p>
+</div>
+<a name="step1-1"></a><h1 class="option">
+<span>Option 1.1: </span>Windows</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>cd c:\Sites</pre>
+</div>
+<div class="message">
+<p><code>cd c:\Sites</code> sets our Sites directory to our current directory.</p>
+</div>
+</blockquote>
+<a name="step1-2"></a><h1 class="option">
+<span>Option 1.2: </span>Mac or Linux</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>cd ~</pre>
+</div>
+<div class="message">
+<p><code>cd ~</code> sets our home directory to our current directory.</p>
+</div>
+</blockquote>
+</blockquote>
+</div>
+<a name="step2"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4008" name="big_checkbox_4008" type="checkbox" value="valuable"><label for="big_checkbox_4008"></label><span class="prefix">Step 2</span>
+</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>mkdir railsbridge</pre>
+</div>
+<div class="message">
+<p>This command creates a new directory for us to store our project in.</p>
+</div>
+</blockquote>
+</div>
+<a name="step3"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4009" name="big_checkbox_4009" type="checkbox" value="valuable"><label for="big_checkbox_4009"></label><span class="prefix">Step 3</span>
+</h1>
+<blockquote><div class="console">
+<span>Type this in the terminal:</span><pre>cd railsbridge</pre>
+</div></blockquote>
+</div>
+<a name="step4"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4010" name="big_checkbox_4010" type="checkbox" value="valuable"><label for="big_checkbox_4010"></label><span class="prefix">Step 4</span>
+</h1>
+<blockquote>
+<div class="message">
+<p>Check to see if you have any existing suggestotron apps from a previous workshop.</p>
+</div>
+<div class="half-width">
+<strong>OSX/Linux</strong><div class="console">
+<span>Type this in the terminal:</span><pre>ls</pre>
+</div>
+<div class="message">
+<p><code>ls</code> stands for <strong>l</strong>i<strong>s</strong>t.</p>
+</div>
+<div class="message">
+<p>It lists the contents of the current directory.</p>
+</div>
+<div class="message">
+<p>If you have any old suggestotron apps in that list, you can remove them to prevent hiccups:</p>
+</div>
+<div class="console">
+<span>Type this in the terminal:</span><pre>rm -rf suggestotron</pre>
+</div>
+</div>
+<div class="half-width">
+<strong>Windows</strong><div class="console">
+<span>Type this in the terminal:</span><pre>dir</pre>
+</div>
+<div class="message">
+<p><code>dir</code> stands for <strong>dir</strong>ectory.</p>
+</div>
+<div class="message">
+<p>It lists the contents of the current directory.</p>
+</div>
+<div class="message">
+<p>If you have any old suggestotron apps in that list, you can remove them to prevent hiccups:</p>
+</div>
+<div class="console">
+<span>Type this in the terminal:</span><pre>rmdir /s /q suggestotron</pre>
+</div>
+</div>
+</blockquote>
+</div>
+<a name="step5"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4011" name="big_checkbox_4011" type="checkbox" value="valuable"><label for="big_checkbox_4011"></label><span class="prefix">Step 5</span>
+</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>rails new suggestotron</pre>
+</div>
+<div class="message">
+<p><code>rails new</code> creates a new Rails project with the name you give.</p>
+</div>
+<div class="message">
+<p>In this case we told it to create a new project called <code>suggestotron</code>. We'll go into detail on what it created shortly.</p>
+</div>
+<div class="message">
+<p>This will print a lot of stuff to the screen and can take a while to finish.</p>
+</div>
+</blockquote>
+</div>
+<a name="step6"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4012" name="big_checkbox_4012" type="checkbox" value="valuable"><label for="big_checkbox_4012"></label><span class="prefix">Step 6</span>
+</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>cd suggestotron</pre>
+</div>
+<div class="message">
+<p><code>cd suggestotron</code> makes suggestotron our current directory.</p>
+</div>
+</blockquote>
+</div>
+<a name="step7"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4013" name="big_checkbox_4013" type="checkbox" value="valuable"><label for="big_checkbox_4013"></label><span class="prefix">Step 7</span>
+</h1>
+<blockquote>
+<div class="message">
+<p>Open the suggestotron folder as a project in your text editor.</p>
+</div>
+<div class="message tip vertical-centerer">
+<i class="fa fa-info-circle fa-3x"></i><div class="vertically-centered">
+<p>Close any files that are already open. They might be from yesterday's <code>test_app</code>, and we want to make sure that we're editing files in today's <code>suggestotron</code> app.</p>
+</div>
+</div>
+<div class="message">
+<p>In <strong>Sublime Text 2</strong>, you can use the <code>Project &gt; Add Folder to Project...</code> menu option:</p>
+
+<p><img src="img/sublime_add_folder_to_project.png" alt="Sublime Text Project menu screenshot"></p>
+
+<p>Select your <code>suggestotron</code> folder from the file picker that opens. If everything works out Sublime should show the directories of your app in a tree structure on the left:</p>
+
+<p><img src="img/sublime_project_as_folder.png" alt="Screenshot of Suggestotron project folder tree in Sublime Text"></p>
+</div>
+</blockquote>
+</div>
+<div class="message">
+<p>You can see that <code>rails new</code> created a lot directories and
+files. The ones we want to focus on today are:</p>
+</div>
+<table align="center" border="1" cellpadding="3" cellspacing="0">
+<tr>
+<th>File/Folder</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td>app/</td>
+<td>Contains the controllers, models, and views for your application.  You will do most of your work here.</td>
+</tr>
+<tr>
+<td>config/</td>
+<td>Configure your application's runtime rules, routes, database, and more.</td>
+</tr>
+<tr>
+<td>db/</td>
+<td>Shows your current database schema, as well as the database migrations.</td>
+</tr>
+<tr>
+<td>public/</td>
+<td>The only folder seen to the world as-is. If you put files in here, they will be served directly without any processing by Rails.</td>
+</tr>
+<tr>
+<td>app/assets/</td>
+<td>This is where your images, JavaScript, stylesheets (CSS), and other static files should go. Modern Rails apps use something called the Assets Pipeline, which combines all the JavaScript and CSS files in this directory into a single file for speediness.</td>
+</tr>
+</table>
+<div class="message">
+<p>There is a lot more that <code>rails new</code> created. Probably enough to fill a book, so we're going to ignore them for now.</p>
+</div>
+</blockquote>
+</div>
+<div class="step next_step">
+<h1><span class="prefix">Next Step:</span></h1>
+<p class="link">Go on to <a class="link" href="add_the_project_to_a_git_repo">Add The Project To A Git Repo</a></p>
+</div>
+</div>
+<div class="back">Back to <a class="back" href="ruby_language">Ruby Language</a>
+</div></main><footer><p>Going through this curriculum on your own? Get help on <a href="http://discourse.bridgefoundry.org/c/railsbridge-help" target="_blank">our Discourse forum</a>, where RailsBridge volunteers can answer your questions.</p>
+<p>If you have a suggestion for improving the docs, please make a <a href="https://github.com/railsbridge/docs">pull request </a>or <a href="https://github.com/railsbridge/docs/issues/new">drop us a note </a>via GitHub Issues (no technical knowledge required).</p>
+<p>Source: <a href="https://github.com/railsbridge/docs">https://github.com/railsbridge/docs</a></p></footer>
+</body>
+</html>
+%Z¤ìV           XÉ7#=Š±	XÉE1   ;    :http://docs.railsbridge.org/intro-to-rails/getting_started request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 15 Mar 2017 12:44:18 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: public, max-age=3600
+Expires: Wed, 15 Mar 2017 13:44:18 GMT
+Content-Length: 12896
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: thin
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 7 predictor::http://docs.railsbridge.org/assets/application.js 1,1,0,0 predictor::http://docs.railsbridge.org/assets/application.css 1,1,0,0 predictor::http://docs.railsbridge.org/intro-to-rails/img/Start_page.png 1,1,0,0 predictor::http://docs.railsbridge.org/intro-to-rails/img/sublime_add_folder_to_project.png 1,1,0,0 predictor::http://docs.railsbridge.org/intro-to-rails/img/sublime_project_as_folder.png 1,1,0,0 predictor::http://www.google-analytics.com/analytics.js 1,1,0,0 predictor::http://www.google-analytics.com/r/collect?v=1&_v=j49&a=502555525&t=pageview&_s=1&dl=http%3A%2F%2Fdocs.railsbridge.org%2Fintro-to-rails%2Fgetting_started&ul=en-za&de=UTF-8&dt=Getting%20Started%20-%20Intro%20To%20Rails&sd=24-bit&sr=1600x900&vp=1270x717&je=0&_u=AACAAEABI~&jid=1762330814&gjid=406972430&cid=1311582708.1489501183&tid=UA-40977319-4&_r=1&z=1495803288 1,1,0,0   2`

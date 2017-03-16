@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Editors - Installfest</title>
+<script src="/assets/application.js"></script><link href="/assets/application.css" rel="stylesheet">
+</head>
+<body>
+<nav class="top cf" role="navigation"><div class="navbar-header cf title"><a href="/installfest"><span class="brand">RailsBridge </span>Installfest</a></div>
+<ul class="navbar-nav nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="/flags/US.png"></a><ul class="flags dropdown-menu">
+<li><a href="http://docs.railsbridge.org"><img src="/flags/US.png"></a></li>
+<li><a href="http://es.railsbridge.org"><img src="/flags/ES.png"></a></li>
+<li><a href="http://zh-tw.railsbridge.org"><img src="/flags/ZH-TW.png"></a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">sites</a><ul class="dropdown-menu">
+<li class="category">Setup</li>
+<li class="current">Installfest</li>
+<li class="category">Rails</li>
+<li><a href="/intro-to-rails/">Intro To Rails</a></li>
+<li><a href="/job-board/">Job Board</a></li>
+<li><a href="/message-board/">Message Board</a></li>
+<li class="category">Frontend</li>
+<li><a href="/frontend/">Frontend</a></li>
+<li><a href="/javascript-snake-game/">Javascript Snake Game</a></li>
+<li><a href="/javascript-to-do-list/">Javascript To Do List</a></li>
+<li><a href="/javascript-to-do-list-with-react/">Javascript To Do List With React</a></li>
+<li class="category">Ruby</li>
+<li><a href="/learn-to-code/">Learn To Code</a></li>
+<li><a href="/ruby/">Ruby</a></li>
+<li class="category">Other stuff</li>
+<li><a href="/docs/">Docs</a></li>
+<li><a href="/workshop/">Workshop</a></li>
+</ul>
+</li>
+<li class="show-when-small"><a data-toggle-selector="#table_of_contents" href="#">toc</a></li>
+<li class="hidden-sm"><a href="editors/src">src</a></li>
+<li class="hidden-sm"><a href="https://github.com/railsbridge/docs/blob/master/sites/en/installfest/editors.step">git</a></li>
+</ul></nav><div class="toc page-list" id="table_of_contents">
+<ul>
+<li class="collapsable">
+<a href="/installfest/installfest"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Installfest</a><ul><li class=""><span class="current">Editors</span></li></ul>
+</li>
+<li class="collapsable closed">
+<a href="/installfest/choose_your_operating_system"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Choose Your Operating System</a><ul>
+<li class="collapsable closed">
+<a href="/installfest/macintosh"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Macintosh</a><ul><li class="collapsable closed">
+<a href="/installfest/osx_rvm"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>OS X RVM</a><ul><li class="collapsable closed">
+<a href="/installfest/install_xcode"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Install Xcode</a><ul>
+<li class=""><a href="/installfest/install_xcode_command_line_tools">Install Xcode Command Line Tools</a></li>
+<li class=""><a href="/installfest/install_xcode_from_app_store">Install Xcode From App Store</a></li>
+<li class=""><a href="/installfest/install_xcode_from_dvd">Install Xcode From DVD</a></li>
+</ul>
+</li></ul>
+</li></ul>
+</li>
+<li class=""><a href="/installfest/windows">Windows</a></li>
+<li class=""><a href="/installfest/linux">Linux</a></li>
+</ul>
+</li>
+<li class=""><a href="/installfest/configure_git">Configure Git</a></li>
+<li class=""><a href="/installfest/create_an_ssh_key">Create An SSH Key</a></li>
+<li class="collapsable closed">
+<a href="/installfest/create_a_heroku_account"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Create A Heroku Account</a><ul><li class=""><a href="/installfest/create_a_github_account">Create A Github Account</a></li></ul>
+</li>
+<li class=""><a href="/installfest/create_a_rails_app">Create A Rails App</a></li>
+<li class=""><a href="/installfest/deploy_a_rails_app">Deploy A Rails App</a></li>
+<li class=""><a href="/installfest/get_a_sticker">Get A Sticker</a></li>
+<li class=""><a href="/installfest/clean_up">Clean Up</a></li>
+</ul>
+<h1>Other Pages</h1>
+<ul><li class=""><a href="/installfest/glossary">Glossary</a></li></ul>
+<span class="expand-all"><i class="fa fa-arrows-alt"></i>Expand All</span>
+</div>
+<main><h1 class="doc_title">Editors</h1>
+<div class="doc">
+<div class="message">
+<p>There are a number of different editors designed for programming. You may already have a favorite editor; if so you can continue using that editor. If you have never used a programming editor, there are a number of good editors available, several of them free of charge. Many RailsBridge instructors use the Atom editor, so you may want to install Atom; if you end up asking for help during your class it may be easier for an instructor or TA to help you if you are using Atom. Here is a list of some of the more widely used editors:</p>
+
+<ul>
+<li>
+<a href="https://atom.io/" target="_blank">Atom</a> is a free, open-source editor that can be customized to your liking using its rich ecosystem of add-on packages. A download is available for OS X 10.8+, Windows 7/8, and Ubuntu/RedHat linux.</li>
+<li>
+<a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> is popular with many Ruby and Rails users. You can use it free for evaluation, then must pay to continue using it.</li>
+<li>
+<a href="http://komodoide.com/download/" target="_blank">Komodo</a> is a very good free programming editor, that is not used as widely as in the past. It is relatively easy to use.</li>
+<li>
+<a href="http://macromates.com/" target="_blank">TextMate</a> is very popular in the Ruby and Rails community. It is not free.</li>
+<li>
+<a href="http://www.aptana.com/products/studio3/download.html" target="_blank">Aptana Studio</a> is a free, full-featured, development IDE (Integrated Development Environment) for Ruby and Rails. It has many powerful features to assist you while you develop your code. You can install Aptana as either a stand-along program or as an <a href="https://www.eclipse.org/downloads/" target="_blank">Eclipse</a> plugin.</li>
+<li>
+<a href="http://www.jetbrains.com/ruby/" target="_blank">RubyMine</a> is used by many companies for their Ruby and Rails software development. Is is also a full-featured IDE, very similar to Aptana. RubyMine is not free, but has a 30-day evaluation period.</li>
+</ul>
+
+<p>There are other programming editors available, but these are among the most popular. Some people use simple non-programming editors, such as NotePad (or WordPad or TextEdit in "plain text" mode). It is fine to use a simple editor, though at some point you should look into using an editor designed for programming as using a programming editor or IDE will improve your programming productivity.</p>
+</div>
+<div class="message important vertical-centerer">
+<i class="fa fa-exclamation-circle fa-3x"></i><div class="vertically-centered">
+<div class="message">
+<p>Microsoft Word is <strong>not</strong> a text editor. It is a <em>word processor</em>.</p>
+</div>
+<div class="message">
+<p>(Word Processors add lots of weird invisible formatting stuff to the files they edit. You must use a text editor to write code.)</p>
+</div>
+</div>
+</div>
+<div class="message">
+<p>Some programmers use command-line text editors like <code>emacs</code> or <code>vim</code>. These have a steep learning curve, so we recommend you use a graphical editor like those listed above.</p>
+</div>
+<div class="step next_step">
+<h1><span class="prefix">Next Step:</span></h1>
+<p class="link">Go on to <a class="link" href="installfest">Installfest</a></p>
+</div>
+</div>
+<div class="back">Back to <a class="back" href="get_a_sticker">Get A Sticker</a>
+</div></main><footer><p>Going through this curriculum on your own? Get help on <a href="http://discourse.bridgefoundry.org/c/railsbridge-help" target="_blank">our Discourse forum</a>, where RailsBridge volunteers can answer your questions.</p>
+<p>If you have a suggestion for improving the docs, please make a <a href="https://github.com/railsbridge/docs">pull request </a>or <a href="https://github.com/railsbridge/docs/issues/new">drop us a note </a>via GitHub Issues (no technical knowledge required).</p>
+<p>Source: <a href="https://github.com/railsbridge/docs">https://github.com/railsbridge/docs</a></p></footer>
+</body>
+</html>
+A(†ij      XÉ&æXÉ&æ=Š¯gXÉ4–   0    :http://docs.railsbridge.org/installfest/editors necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 15 Mar 2017 11:33:27 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: public, max-age=3600
+Expires: Wed, 15 Mar 2017 12:33:27 GMT
+Content-Length: 8606
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: thin
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 6 predictor::http://docs.railsbridge.org/assets/application.js 1,2,1489577702,0 predictor::http://docs.railsbridge.org/assets/application.css 1,2,1489577702,0 predictor::http://www.google-analytics.com/analytics.js 1,2,1489577702,0 predictor::http://www.google-analytics.com/collect?v=1&_v=j49&a=1814813185&t=pageview&_s=1&dl=http%3A%2F%2Fdocs.railsbridge.org%2Finstallfest%2Feditors&ul=en-za&de=UTF-8&dt=Editors%20-%20Installfest&sd=24-bit&sr=1600x900&vp=1270x717&je=0&_u=AACAAEABI~&jid=&gjid=&cid=1311582708.1489501183&tid=UA-40977319-4&z=567573386 1,1,1489577607,0 predictor::http://docs.railsbridge.org/assets/opensans-italic.woff 1,1,1489577702,0 predictor::http://www.google-analytics.com/collect?v=1&_v=j49&a=1795297129&t=pageview&_s=1&dl=http%3A%2F%2Fdocs.railsbridge.org%2Finstallfest%2Feditors&ul=en-za&de=UTF-8&dt=Editors%20-%20Installfest&sd=24-bit&sr=1600x900&vp=1270x717&je=0&_u=AACAAEABI~&jid=&gjid=&cid=1311582708.1489501183&tid=UA-40977319-4&z=1287072493 1,1,1489577702,0   !ž

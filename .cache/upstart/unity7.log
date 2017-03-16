@@ -1,0 +1,6 @@
+WARN  2017-03-16 09:23:26 unity.iconloader IconLoader.cpp:756 Unable to load icon file:/// at size -1x22: Can't open directory
+1489649543637	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+1489649543990	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+1489649544539	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+1489649547832	addons.xpi	WARN	System add-on websensehelper@mozilla.org isn't compatible with the application.
+1489649547853	addons.manager	WARN	Failed to update system addons: Error: Rejecting updated system add-on set that either could not be downloaded or contained unusable add-ons. (resource://gre/modules/addons/XPIProvider.jsm:3017:15) JS Stack trace: this.XPIProvider.updateSystemAddons<@XPIProvider.jsm:3017:15

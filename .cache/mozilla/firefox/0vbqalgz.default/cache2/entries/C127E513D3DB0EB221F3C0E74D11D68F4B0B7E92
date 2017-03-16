@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Glossary - Installfest</title>
+<script src="/assets/application.js"></script><link href="/assets/application.css" rel="stylesheet">
+</head>
+<body>
+<nav class="top cf" role="navigation"><div class="navbar-header cf title"><a href="/installfest"><span class="brand">RailsBridge </span>Installfest</a></div>
+<ul class="navbar-nav nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="/flags/US.png"></a><ul class="flags dropdown-menu">
+<li><a href="http://docs.railsbridge.org"><img src="/flags/US.png"></a></li>
+<li><a href="http://es.railsbridge.org"><img src="/flags/ES.png"></a></li>
+<li><a href="http://zh-tw.railsbridge.org"><img src="/flags/ZH-TW.png"></a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">sites</a><ul class="dropdown-menu">
+<li class="category">Setup</li>
+<li class="current">Installfest</li>
+<li class="category">Rails</li>
+<li><a href="/intro-to-rails/">Intro To Rails</a></li>
+<li><a href="/job-board/">Job Board</a></li>
+<li><a href="/message-board/">Message Board</a></li>
+<li class="category">Frontend</li>
+<li><a href="/frontend/">Frontend</a></li>
+<li><a href="/javascript-snake-game/">Javascript Snake Game</a></li>
+<li><a href="/javascript-to-do-list/">Javascript To Do List</a></li>
+<li><a href="/javascript-to-do-list-with-react/">Javascript To Do List With React</a></li>
+<li class="category">Ruby</li>
+<li><a href="/learn-to-code/">Learn To Code</a></li>
+<li><a href="/ruby/">Ruby</a></li>
+<li class="category">Other stuff</li>
+<li><a href="/docs/">Docs</a></li>
+<li><a href="/workshop/">Workshop</a></li>
+</ul>
+</li>
+<li class="show-when-small"><a data-toggle-selector="#table_of_contents" href="#">toc</a></li>
+<li class="hidden-sm"><a href="glossary/src">src</a></li>
+<li class="hidden-sm"><a href="https://github.com/railsbridge/docs/blob/master/sites/en/installfest/glossary.step">git</a></li>
+</ul></nav><div class="toc page-list" id="table_of_contents">
+<ul>
+<li class="collapsable closed">
+<a href="/installfest/installfest"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Installfest</a><ul><li class=""><a href="/installfest/editors">Editors</a></li></ul>
+</li>
+<li class="collapsable closed">
+<a href="/installfest/choose_your_operating_system"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Choose Your Operating System</a><ul>
+<li class="collapsable closed">
+<a href="/installfest/macintosh"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Macintosh</a><ul><li class="collapsable closed">
+<a href="/installfest/osx_rvm"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>OS X RVM</a><ul><li class="collapsable closed">
+<a href="/installfest/install_xcode"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Install Xcode</a><ul>
+<li class=""><a href="/installfest/install_xcode_command_line_tools">Install Xcode Command Line Tools</a></li>
+<li class=""><a href="/installfest/install_xcode_from_app_store">Install Xcode From App Store</a></li>
+<li class=""><a href="/installfest/install_xcode_from_dvd">Install Xcode From DVD</a></li>
+</ul>
+</li></ul>
+</li></ul>
+</li>
+<li class=""><a href="/installfest/windows">Windows</a></li>
+<li class=""><a href="/installfest/linux">Linux</a></li>
+</ul>
+</li>
+<li class=""><a href="/installfest/configure_git">Configure Git</a></li>
+<li class=""><a href="/installfest/create_an_ssh_key">Create An SSH Key</a></li>
+<li class="collapsable closed">
+<a href="/installfest/create_a_heroku_account"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Create A Heroku Account</a><ul><li class=""><a href="/installfest/create_a_github_account">Create A Github Account</a></li></ul>
+</li>
+<li class=""><a href="/installfest/create_a_rails_app">Create A Rails App</a></li>
+<li class=""><a href="/installfest/deploy_a_rails_app">Deploy A Rails App</a></li>
+<li class=""><a href="/installfest/get_a_sticker">Get A Sticker</a></li>
+<li class=""><a href="/installfest/clean_up">Clean Up</a></li>
+</ul>
+<h1>Other Pages</h1>
+<ul><li class=""><span class="current">Glossary</span></li></ul>
+<span class="expand-all"><i class="fa fa-arrows-alt"></i>Expand All</span>
+</div>
+<main><h1 class="doc_title">Glossary</h1>
+<div class="doc">
+<h2>If you are ever stuck trying to make sense of all this alphabet soup - these glossaries may be helpful!</h2>
+<span>Have a look at the </span><a href="#general-glossary">general Glossary</a><span>, the </span><a href="#command-line-glossary">Command Line Glossary</a><span>, and the </span><a href="#ruby-and-rails-glossary">Ruby and Rails Glossary</a><span>.</span><a name="general-glossary"></a><h1>General Glossary</h1>
+<blockquote><div class="message">
+<p><strong>Classes and Instances:</strong>  Types and objects. If we have a class (type) called <em>Car</em>, then <em>Peugeot 406</em> and <em>Fiat Ritmo</em> will be instances (objects) of this class. There may also be other instances unique to <em>Peugeot 406</em>, differentiated by, for example, their <em>Model number</em>.</p>
+
+<p><strong>Command Line Interface (or Console / Terminal):</strong>  Allows you to interact with your computer (add, delete, modify files and much more) solely by typing instructions (commands).</p>
+
+<p><strong>Function:</strong>  Code that can be re-used; if a formula has to change, you only need to change it in one place.</p>
+
+<p><strong>Git:</strong>  A type of <strong>Version Control Software (VCS)</strong>.</p>
+
+<p><strong>Github:</strong>  A site that hosts git repositories. Github also adds a number of tools that aid interaction between developers collaborating on software.</p>
+
+<p><strong>Grouping:</strong>  Indents and whitespaces are used for grouping code together and simplify readability. Ruby also uses do â€¦ end to group.</p>
+
+<p><strong>Heroku:</strong>  A site that allows you to host your Ruby on Rails applications. Heroku also supports other languages and frameworks.</p>
+
+<p><strong>Home directory:</strong>  On a OS X or Linux computer, this is where the files and settings belonging to your user are stored.</p>
+
+<p><strong>Loop:</strong>   While <em>something is true, do this</em>. When <em>something becomes not true</em> then break the loop / stop.</p>
+
+<p><strong>Markdown:</strong> A lightweight markup language that allows you to write using an easy-to-read, easy-to-write plain text format, and then convert it to structurally valid XHTML (or HTML).</p>
+
+<p><strong>Rake:</strong>  A Ruby application that can be used to perform a number of custom tasks. It is often used to carry out maintenance or ad-hoc jobs.</p>
+
+<p><strong>Repository (or Repo):</strong>  A grouping of files within <strong>Version Control Software</strong>. When using <strong>Git</strong>, you will need to have access to a particular repository before you can start making changes to the source code.</p>
+
+<p><strong>Ruby:</strong>  A programming language.</p>
+
+<p><strong>Ruby on Rails:</strong>  A web framework written in <strong>Ruby</strong>. It has been designed in such a way as to make web development as fast and as easy as possible.</p>
+
+<p><strong>RubyGem:</strong>  A package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries (in a self-contained format called a "gem"), a tool designed to easily manage the installation of gems and a server for distributing them.</p>
+
+<p><strong>RVM:</strong>  The Ruby Version Manager. An application that makes it easy to have multiple versions of Ruby on your computer at once.</p>
+
+<p><strong>Script:</strong>  A term often used to describe a text file containing a series of instructions, written in Ruby, that will be used to produce the output visible in a browser.</p>
+
+<p><strong>Shell:</strong>  The software that interprets your commandline instructions. Often used as a synonym for the <strong>Command Line Interface</strong>.</p>
+
+<p><strong>SSH:</strong>  Secure Shell. A way to securely connect to a remote computer.</p>
+
+<p><strong>String:</strong>  Text only, typed between inverted commas.</p>
+
+<p><strong>Text editor:</strong>  A program that allows you to create and modify the text files that will be used by <strong>Ruby on Rails</strong> to run your command. Some text editors are optimised for software development and provide tools that increase productivity.</p>
+
+<p><strong>Variable:</strong>  A storage location and an associated symbolic name (an identifier) which contains some known or unknown quantity or information (a value). The variable name is the usual way to reference the stored value; this separation of name and content allows the name to be used independently of the exact information it represents.</p>
+
+<p><strong>Version Control Software:</strong>  Software that tracks changes to your source code and also allows you to undo or combine changes.</p>
+</div></blockquote>
+<a name="command-line-glossary"></a><h1>Command Line Glossary</h1>
+<blockquote><div class="message">
+<p><strong>~</strong>  Called 'tilde'. On OS X or Linux, this is a shortcut to the <strong>home directory</strong> for your user.</p>
+
+<p><strong>\</strong>  When you use an 'escape sequence' in front of a character, the normal interpretation of that character is not applied.</p>
+
+<p><strong>=</strong>  Assignment to make whatever follows, to be treated as true (<em>Name="Veronica"</em>).</p>
+
+<p><strong>==</strong>  Boolean, a data type with only 2 possible values: True or False (<em>Is name=="Veronica"? True</em>).</p>
+
+<p><strong>cd (or cd ~)</strong>  Change into your <strong>home directory</strong>.</p>
+
+<p><strong>cd</strong> <em>directory</em> <strong>(or cd ..)</strong>  Change into the parent directory of your current directory.</p>
+
+<p><strong>cd ../../</strong>  Go up 2 levels / multiple levels.</p>
+
+<p><strong>cd</strong> <em>foo</em>  Change into the directory named <em>foo</em>.</p>
+
+<p><strong>cp</strong> <em>original.rb copy.rb</em>  Makes a copy of the <em>original.rb</em> file.</p>
+
+<p><strong>ls</strong>  List the contents of your current directory.</p>
+
+<p><strong>ls</strong> <em>directory</em>  Shows all contents (files and folders) of the directory.</p>
+
+<p><strong>pwd</strong>  Shows the full path of the directory you are currently in (e.g. <em>/home/heidi/tehcodez/Railsbridge</em>).</p>
+
+<p><strong>-h (or --help)</strong>  Can be run with all commands to list more helpful information.</p>
+
+<p><strong>git branch</strong>  Shows you the branch that you're currently in.</p>
+
+<p><strong>git status</strong>  Shows you any pending changes that you've created since your last commit.</p>
+
+<p><strong>git add -A</strong>  Will add all your changes to your next commit.</p>
+
+<p><strong>git add</strong> <em>file1.md file2.md file3.md</em>  Will add only the files you specify to your next commit.</p>
+
+<p><strong>git commit -m</strong> <em>"some useful message for your future self"</em>  Commits all your changes with your descriptive message to git.</p>
+
+<p><strong>git push origin</strong> <i>remote_branch_name</i>  This pushes the code in your current branch to the <i>remote_branch_name</i> branch on the remote repo named 'origin'.</p>
+</div></blockquote>
+<a name="ruby-and-rails-glossary"></a><h1>Ruby and Rails Glossary</h1>
+<blockquote><div class="message">
+<p><strong>puts</strong> <em>something</em>  Prints its argument to the console. Can be used in Rails apps to print something in the console where the server is running.</p>
+
+<p><strong>rails new</strong> <em>NameApp</em>  Creates a new Rails application with the entire Rails directory structure to run your application.</p>
+
+<p><strong>rails server (or rails s)</strong>  Launches a web server named Puma that you will use any time you want to access your application through a web browser.</p>
+
+<p><strong>rails generate (or rails g)</strong>  Uses templates to create a bunch of directories and files in your application.</p>
+
+<p><strong>rails generate scaffold</strong>  Creates a full set of model, database migration for that model, controller to manipulate it, views to view and manipulate the data and a test suite for each of the above.</p>
+
+<p><strong>rake</strong>  Rake is â€˜Ruby Make', used to build up a list of tasks.</p>
+
+<p><strong>rails console (or rails c)</strong> Lets you interact with your Rails application from the command line, useful for testing out quick ideas with code and changing data server-side without touching the website.</p>
+
+<p><strong>rails console --sandbox</strong>  If you wish to test out some code without changing any data.</p>
+
+<p><strong>rails dbconsole (or rails db)</strong>  Used to figure out which database you're using and drops you into whichever command line interface you would use with.  It supports MySQL, PostgreSQL, SQLite and SQLite3.</p>
+
+<p><strong>rails destroy (or rails d)</strong>  Does the opposite of generate.  It will figure out what generate did and undo it.</p>
+</div></blockquote>
+</div>
+<div class="back">Back to <a class="back" href="linux">Linux</a>
+</div></main><footer><p>Going through this curriculum on your own? Get help on <a href="http://discourse.bridgefoundry.org/c/railsbridge-help" target="_blank">our Discourse forum</a>, where RailsBridge volunteers can answer your questions.</p>
+<p>If you have a suggestion for improving the docs, please make a <a href="https://github.com/railsbridge/docs">pull request </a>or <a href="https://github.com/railsbridge/docs/issues/new">drop us a note </a>via GitHub Issues (no technical knowledge required).</p>
+<p>Source: <a href="https://github.com/railsbridge/docs">https://github.com/railsbridge/docs</a></p></footer>
+</body>
+</html>
+¡TýÍx¥      XÇüvXÇüw=‰ÖìXÈ
+†   1    :http://docs.railsbridge.org/installfest/glossary necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Tue, 14 Mar 2017 14:21:42 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: public, max-age=3600
+Expires: Tue, 14 Mar 2017 15:21:42 GMT
+Content-Length: 14030
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+Server: thin
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 5 predictor::http://docs.railsbridge.org/assets/application.js 1,1,1489501302,0 predictor::http://docs.railsbridge.org/assets/application.css 1,1,1489501302,0 predictor::http://www.google-analytics.com/analytics.js 1,1,1489501302,0 predictor::http://docs.railsbridge.org/assets/opensans-italic.woff 1,1,1489501302,0 predictor::http://www.google-analytics.com/r/collect?v=1&_v=j49&a=373111939&t=pageview&_s=1&dl=http%3A%2F%2Fdocs.railsbridge.org%2Finstallfest%2Fglossary&ul=en-za&de=UTF-8&dt=Glossary%20-%20Installfest&sd=24-bit&sr=1600x900&vp=1270x688&je=0&_u=AACAAEABI~&jid=1735603365&gjid=297627148&cid=1311582708.1489501183&tid=UA-40977319-4&_r=1&z=540415100 1,1,1489501302,0   6Î

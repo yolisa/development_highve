@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Add The Project To A Git Repo - Intro To Rails</title>
+<script src="/assets/application.js"></script><link href="/assets/application.css" rel="stylesheet">
+</head>
+<body>
+<nav class="top cf" role="navigation"><div class="navbar-header cf title"><a href="/intro-to-rails"><span class="brand">RailsBridge </span>Intro To Rails</a></div>
+<ul class="navbar-nav nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="/flags/US.png"></a><ul class="flags dropdown-menu">
+<li><a href="http://docs.railsbridge.org"><img src="/flags/US.png"></a></li>
+<li><a href="http://es.railsbridge.org"><img src="/flags/ES.png"></a></li>
+<li><a href="http://zh-tw.railsbridge.org"><img src="/flags/ZH-TW.png"></a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">sites</a><ul class="dropdown-menu">
+<li class="category">Setup</li>
+<li><a href="/installfest/">Installfest</a></li>
+<li class="category">Rails</li>
+<li class="current">Intro To Rails</li>
+<li><a href="/job-board/">Job Board</a></li>
+<li><a href="/message-board/">Message Board</a></li>
+<li class="category">Frontend</li>
+<li><a href="/frontend/">Frontend</a></li>
+<li><a href="/javascript-snake-game/">Javascript Snake Game</a></li>
+<li><a href="/javascript-to-do-list/">Javascript To Do List</a></li>
+<li><a href="/javascript-to-do-list-with-react/">Javascript To Do List With React</a></li>
+<li class="category">Ruby</li>
+<li><a href="/learn-to-code/">Learn To Code</a></li>
+<li><a href="/ruby/">Ruby</a></li>
+<li class="category">Other stuff</li>
+<li><a href="/docs/">Docs</a></li>
+<li><a href="/workshop/">Workshop</a></li>
+</ul>
+</li>
+<li class="show-when-small"><a data-toggle-selector="#table_of_contents" href="#">toc</a></li>
+<li class="hidden-sm"><a href="add_the_project_to_a_git_repo/src">src</a></li>
+<li class="hidden-sm"><a href="https://github.com/railsbridge/docs/blob/master/sites/en/intro-to-rails/add_the_project_to_a_git_repo.step">git</a></li>
+</ul></nav><div class="toc page-list" id="table_of_contents">
+<ul>
+<li class=""><a href="/intro-to-rails/intro-to-rails">Intro To Rails</a></li>
+<li class=""><a href="/intro-to-rails/ruby_language">Ruby Language</a></li>
+<li class=""><a href="/intro-to-rails/getting_started">Getting Started</a></li>
+<li class=""><span class="current">Add The Project To A Git Repo</span></li>
+<li class=""><a href="/intro-to-rails/running_your_application_locally">Running Your Application Locally</a></li>
+<li class="collapsable closed">
+<a href="/intro-to-rails/creating_a_migration"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Creating A Migration</a><ul><li class=""><a href="/intro-to-rails/rails_architecture">Rails Architecture</a></li></ul>
+</li>
+<li class=""><a href="/intro-to-rails/CRUD_with_scaffolding">CRUD With Scaffolding</a></li>
+<li class=""><a href="/intro-to-rails/setting_the_default_page">Setting The Default Page</a></li>
+<li class=""><a href="/intro-to-rails/voting_on_topics">Voting On Topics</a></li>
+<li class=""><a href="/intro-to-rails/hooking_up_votes_and_topics">Hooking Up Votes And Topics</a></li>
+<li class=""><a href="/intro-to-rails/allow_people_to_vote">Allow People To Vote</a></li>
+<li class=""><a href="/intro-to-rails/redirect_to_the_topics_list_after_creating_a_new_topic">Redirect To The Topics List After Creating A New Topic</a></li>
+<li class=""><a href="/intro-to-rails/make_the_topic_title_a_link">Make The Topic Title A Link</a></li>
+<li class=""><a href="/intro-to-rails/clean_up_links_on_the_topics_list">Clean Up Links On The Topics List</a></li>
+<li class=""><a href="/intro-to-rails/credits_and_next_steps">Credits And Next Steps</a></li>
+</ul>
+<h1>Other Pages</h1>
+<ul>
+<li class=""><a href="/intro-to-rails/deploying_to_heroku">Deploying To Heroku</a></li>
+<li class=""><a href="/intro-to-rails/deploying_to_heroku_again">Deploying To Heroku Again</a></li>
+<li class=""><a href="/intro-to-rails/glossary">Glossary</a></li>
+</ul>
+<span class="expand-all"><i class="fa fa-arrows-alt"></i>Expand All</span>
+</div>
+<main><h1 class="doc_title">Add The Project To A Git Repo</h1>
+<div class="doc">
+<div class="goals">
+<h1>Goals</h1>
+<ul>
+<li><div class="message">
+<p>Create a local git repository</p>
+</div></li>
+<li><div class="message">
+<p>Add all our files to the git repository</p>
+</div></li>
+<div class="message">
+<p>In order to publish our application, we need to add our application and any changes we make over time to a "revision control system". In our case we're going to use <em>git</em> because it is (relatively) easy and it is what our app server, <em>Heroku</em>, uses.</p>
+</div>
+</ul>
+</div>
+<div class="steps">
+<h1>Steps</h1>
+<blockquote>
+<a name="step1"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_253" name="big_checkbox_253" type="checkbox" value="valuable"><label for="big_checkbox_253"></label><span class="prefix">Step 1</span>
+</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>git init</pre>
+</div>
+<div class="message">
+<p>It doesn't look like anything really happened, but <code>git init</code>
+initialized a new repository in a hidden directory called <code>.git</code>.</p>
+</div>
+<div class="message">
+<p>You can see this by typing <code>ls -a</code> (<strong>l</strong>i<strong>s</strong>t <strong>a</strong>ll files).</p>
+</div>
+</blockquote>
+</div>
+<a name="step2"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_254" name="big_checkbox_254" type="checkbox" value="valuable"><label for="big_checkbox_254"></label><span class="prefix">Step 2</span>
+</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>git status</pre>
+</div>
+<div class="message">
+<p><code>git status</code> tells you everything git sees as modified, new, or missing.</p>
+</div>
+<div class="message">
+<p>You should see a ton of stuff under <code>Untracked files</code>.</p>
+</div>
+</blockquote>
+</div>
+<a name="step3"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_255" name="big_checkbox_255" type="checkbox" value="valuable"><label for="big_checkbox_255"></label><span class="prefix">Step 3</span>
+</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>git add .</pre>
+</div>
+<div class="message">
+<p><code>git add .</code> tells git that you want to add the current directory (aka <code>.</code>) and everything under it to the repo.</p>
+</div>
+<div class="message tip vertical-centerer">
+<i class="fa fa-info-circle fa-3x"></i><div class="vertically-centered">
+<p><strong>git add</strong></p>
+<div class="message">
+<p>With Git, there are usually many ways to do very similar things.</p>
+
+<ul>
+<li>
+<code>git add foo.txt</code> adds a file named <code>foo.txt</code>
+</li>
+<li>
+<code>git add .</code> adds all new files and changed files, but <em>keeps</em> files that you've deleted</li>
+<li>
+<code>git add -A</code> adds everything, including deletions</li>
+</ul>
+
+<p>"Adding deletions" may sound weird, but if you think of a version control system as keeping
+track of <em>changes</em>, it might make more sense. Most people use <code>git add .</code> but <code>git add -A</code>
+can be safer. No matter what, <code>git status</code> is your friend.</p>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<a name="step4"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_256" name="big_checkbox_256" type="checkbox" value="valuable"><label for="big_checkbox_256"></label><span class="prefix">Step 4</span>
+</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>git status</pre>
+</div>
+<div class="message">
+<p>Now you should see a bunch of files listed under <code>Changes to be committed</code>.</p>
+</div>
+</blockquote>
+</div>
+<a name="step5"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_257" name="big_checkbox_257" type="checkbox" value="valuable"><label for="big_checkbox_257"></label><span class="prefix">Step 5</span>
+</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>git commit -m "Added all the things"</pre>
+</div>
+<div class="message">
+<p><code>git commit</code> tells git to actually <em>do</em> all things you've said you wanted to do.</p>
+</div>
+<div class="message">
+<p>This is done in two steps so you can group multiple changes together.</p>
+</div>
+<div class="message">
+<p><code>-m "Added all the things"</code>  is just a shortcut to say what your commit message is. You can skip that part and git will bring up an editor to fill out a more detailed message.</p>
+</div>
+</blockquote>
+</div>
+<a name="step6"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_258" name="big_checkbox_258" type="checkbox" value="valuable"><label for="big_checkbox_258"></label><span class="prefix">Step 6</span>
+</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>git status</pre>
+</div>
+<div class="message">
+<p>Now you should see something like <code>nothing to commit, working directory clean</code> which means you've committed all of your changes.</p>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+<div class="explanation">
+<h1>Explanation</h1>
+<blockquote><div class="message">
+<p>By checking your application into git now, you're creating a record of your starting point. Whenever you make a change during today's workshop, we'll add it to git before moving on. This way, if anything ever breaks, or you make a change you don't like, you can use git as an all-powerful "undo" technique. But that only works when you remember to commit early and often!</p>
+</div></blockquote>
+</div>
+<div class="step next_step">
+<h1><span class="prefix">Next Step:</span></h1>
+<p class="link">Go on to <a class="link" href="running_your_application_locally">Running Your Application Locally</a></p>
+</div>
+</div></main><footer><p>Going through this curriculum on your own? Get help on <a href="http://discourse.bridgefoundry.org/c/railsbridge-help" target="_blank">our Discourse forum</a>, where RailsBridge volunteers can answer your questions.</p>
+<p>If you have a suggestion for improving the docs, please make a <a href="https://github.com/railsbridge/docs">pull request </a>or <a href="https://github.com/railsbridge/docs/issues/new">drop us a note </a>via GitHub Issues (no technical knowledge required).</p>
+<p>Source: <a href="https://github.com/railsbridge/docs">https://github.com/railsbridge/docs</a></p></footer>
+</body>
+</html>
+UœËð>6      XÊCXÊCM=‹teXÊPà   I    :http://docs.railsbridge.org/intro-to-rails/add_the_project_to_a_git_repo request-method GET response-head HTTP/1.1 200 OK
+Date: Thu, 16 Mar 2017 07:46:24 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: public, max-age=3600
+Expires: Thu, 16 Mar 2017 08:46:25 GMT
+Content-Length: 10684
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: thin
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 6 predictor::http://docs.railsbridge.org/assets/application.js 1,1,1489650436,0 predictor::http://docs.railsbridge.org/assets/application.css 1,1,1489650436,0 predictor::http://www.google-analytics.com/analytics.js 1,1,1489650436,0 predictor::http://www.google-analytics.com/collect?v=1&_v=j49&a=197059653&t=pageview&_s=1&dl=http%3A%2F%2Fdocs.railsbridge.org%2Fintro-to-rails%2Fadd_the_project_to_a_git_repo&ul=en-za&de=UTF-8&dt=Add%20The%20Project%20To%20A%20Git%20Repo%20-%20Intro%20To%20Rails&sd=24-bit&sr=1600x900&vp=1270x717&je=0&_u=AACAAEABI~&jid=&gjid=&cid=1311582708.1489501183&tid=UA-40977319-4&z=291787376 1,1,0,0 necko:classified 1 predictor::http://www.google-analytics.com/r/collect?v=1&_v=j49&a=270198204&t=pageview&_s=1&dl=http%3A%2F%2Fdocs.railsbridge.org%2Fintro-to-rails%2Fadd_the_project_to_a_git_repo&ul=en-za&de=UTF-8&dt=Add%20The%20Project%20To%20A%20Git%20Repo%20-%20Intro%20To%20Rails&sd=24-bit&sr=1600x900&vp=1270x717&je=0&_u=AACAAEABI~&jid=2097165716&gjid=256367026&cid=1311582708.1489501183&tid=UA-40977319-4&_r=1&z=1382094022 1,1,1489650436,0 predictor::http://docs.railsbridge.org/img/check-dim.png 1,1,1489650436,0   )¼

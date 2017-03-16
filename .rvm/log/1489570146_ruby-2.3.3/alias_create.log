@@ -1,0 +1,46 @@
+[2017-03-15 11:29:06] alias_create_execute
+alias_create_execute () 
+{ 
+    for _path in "$rvm_rubies_path" "$rvm_environments_path" "$rvm_wrappers_path";
+    do
+        if [[ -L "$_path/$alias_name" ]]; then
+            \command \rm -fv "$_path/$alias_name" || return $?;
+        fi;
+        \command \ln -fs "$_path/$rvm_ruby_string" "$_path/$alias_name" || return $?;
+    done;
+    __rvm_db_ "$rvm_path/config/alias" "$alias_name" "$rvm_ruby_string"
+}
+current path: /home/quirky30
+GEM_HOME=/home/quirky30/.rvm/gems/ruby-2.3.3
+PATH=/home/quirky30/.rvm/gems/ruby-2.3.3/bin:/home/quirky30/.rvm/gems/ruby-2.3.3@global/bin:/home/quirky30/.rvm/rubies/ruby-2.3.3/bin:/home/quirky30/.rvm/bin:/home/quirky30/bin:/home/quirky30/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+GEM_PATH=/home/quirky30/.rvm/gems/ruby-2.3.3:/home/quirky30/.rvm/gems/ruby-2.3.3@global
+command(1): alias_create_execute
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/quirky30/.rvm/rubies/default ]]
++ command ln -fs /home/quirky30/.rvm/rubies/ruby-2.3.3 /home/quirky30/.rvm/rubies/default
++ ln -fs /home/quirky30/.rvm/rubies/ruby-2.3.3 /home/quirky30/.rvm/rubies/default
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/quirky30/.rvm/environments/default ]]
++ command ln -fs /home/quirky30/.rvm/environments/ruby-2.3.3 /home/quirky30/.rvm/environments/default
++ ln -fs /home/quirky30/.rvm/environments/ruby-2.3.3 /home/quirky30/.rvm/environments/default
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/quirky30/.rvm/wrappers/default ]]
++ command ln -fs /home/quirky30/.rvm/wrappers/ruby-2.3.3 /home/quirky30/.rvm/wrappers/default
++ ln -fs /home/quirky30/.rvm/wrappers/ruby-2.3.3 /home/quirky30/.rvm/wrappers/default
++ __rvm_db_ /home/quirky30/.rvm/config/alias default ruby-2.3.3
++ typeset __db __key __value
++ __db=/home/quirky30/.rvm/config/alias
++ __key=default
++ shift 2
++ __value=ruby-2.3.3
++ case "${__value}" in
++ __rvm_db_add /home/quirky30/.rvm/config/alias default ruby-2.3.3
++ typeset __dir=/home/quirky30/.rvm/config
++ [[ -f /home/quirky30/.rvm/config/alias ]]
++ __rvm_db_remove /home/quirky30/.rvm/config/alias default
++ [[ -f /home/quirky30/.rvm/config/alias ]]
++ __rvm_sed -e '\#^default=# d' -e '/^$/d' /home/quirky30/.rvm/config/alias
++ sed -e '\#^default=# d' -e '/^$/d' /home/quirky30/.rvm/config/alias
++ command mv -f /home/quirky30/.rvm/config/alias.new /home/quirky30/.rvm/config/alias
++ mv -f /home/quirky30/.rvm/config/alias.new /home/quirky30/.rvm/config/alias
++ printf '%b=%b\n' default ruby-2.3.3

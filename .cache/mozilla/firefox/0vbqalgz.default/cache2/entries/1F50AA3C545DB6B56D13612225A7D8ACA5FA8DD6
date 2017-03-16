@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Macintosh - Installfest</title>
+<script src="/assets/application.js"></script><link href="/assets/application.css" rel="stylesheet">
+</head>
+<body>
+<nav class="top cf" role="navigation"><div class="navbar-header cf title"><a href="/installfest"><span class="brand">RailsBridge </span>Installfest</a></div>
+<ul class="navbar-nav nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="/flags/US.png"></a><ul class="flags dropdown-menu">
+<li><a href="http://docs.railsbridge.org"><img src="/flags/US.png"></a></li>
+<li><a href="http://es.railsbridge.org"><img src="/flags/ES.png"></a></li>
+<li><a href="http://zh-tw.railsbridge.org"><img src="/flags/ZH-TW.png"></a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">sites</a><ul class="dropdown-menu">
+<li class="category">Setup</li>
+<li class="current">Installfest</li>
+<li class="category">Rails</li>
+<li><a href="/intro-to-rails/">Intro To Rails</a></li>
+<li><a href="/job-board/">Job Board</a></li>
+<li><a href="/message-board/">Message Board</a></li>
+<li class="category">Frontend</li>
+<li><a href="/frontend/">Frontend</a></li>
+<li><a href="/javascript-snake-game/">Javascript Snake Game</a></li>
+<li><a href="/javascript-to-do-list/">Javascript To Do List</a></li>
+<li><a href="/javascript-to-do-list-with-react/">Javascript To Do List With React</a></li>
+<li class="category">Ruby</li>
+<li><a href="/learn-to-code/">Learn To Code</a></li>
+<li><a href="/ruby/">Ruby</a></li>
+<li class="category">Other stuff</li>
+<li><a href="/docs/">Docs</a></li>
+<li><a href="/workshop/">Workshop</a></li>
+</ul>
+</li>
+<li class="show-when-small"><a data-toggle-selector="#table_of_contents" href="#">toc</a></li>
+<li class="hidden-sm"><a href="macintosh/src">src</a></li>
+<li class="hidden-sm"><a href="https://github.com/railsbridge/docs/blob/master/sites/en/installfest/macintosh.step">git</a></li>
+</ul></nav><div class="toc page-list" id="table_of_contents">
+<ul>
+<li class="collapsable closed">
+<a href="/installfest/installfest"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Installfest</a><ul><li class=""><a href="/installfest/editors">Editors</a></li></ul>
+</li>
+<li class="collapsable">
+<a href="/installfest/choose_your_operating_system"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Choose Your Operating System</a><ul>
+<li class="collapsable">
+<span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span><span class="current">Macintosh</span><ul><li class="collapsable closed">
+<a href="/installfest/osx_rvm"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>OS X RVM</a><ul><li class="collapsable closed">
+<a href="/installfest/install_xcode"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Install Xcode</a><ul>
+<li class=""><a href="/installfest/install_xcode_command_line_tools">Install Xcode Command Line Tools</a></li>
+<li class=""><a href="/installfest/install_xcode_from_app_store">Install Xcode From App Store</a></li>
+<li class=""><a href="/installfest/install_xcode_from_dvd">Install Xcode From DVD</a></li>
+</ul>
+</li></ul>
+</li></ul>
+</li>
+<li class=""><a href="/installfest/windows">Windows</a></li>
+<li class=""><a href="/installfest/linux">Linux</a></li>
+</ul>
+</li>
+<li class=""><a href="/installfest/configure_git">Configure Git</a></li>
+<li class=""><a href="/installfest/create_an_ssh_key">Create An SSH Key</a></li>
+<li class="collapsable closed">
+<a href="/installfest/create_a_heroku_account"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Create A Heroku Account</a><ul><li class=""><a href="/installfest/create_a_github_account">Create A Github Account</a></li></ul>
+</li>
+<li class=""><a href="/installfest/create_a_rails_app">Create A Rails App</a></li>
+<li class=""><a href="/installfest/deploy_a_rails_app">Deploy A Rails App</a></li>
+<li class=""><a href="/installfest/get_a_sticker">Get A Sticker</a></li>
+<li class=""><a href="/installfest/clean_up">Clean Up</a></li>
+</ul>
+<h1>Other Pages</h1>
+<ul><li class=""><a href="/installfest/glossary">Glossary</a></li></ul>
+<span class="expand-all"><i class="fa fa-arrows-alt"></i>Expand All</span>
+</div>
+<main><h1 class="doc_title">Macintosh</h1>
+<div class="doc">
+<a name="step1"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4801" name="big_checkbox_4801" type="checkbox" value="valuable"><label for="big_checkbox_4801"></label><span class="prefix">Step 1: </span>Learn your Mac OS X Version</h1>
+<blockquote><div class="message">
+<ul>
+<li>Click on the Apple icon in the top left of your screen.</li>
+<li>Select "About This Mac"</li>
+<li>
+<p>In the window that comes up, under the title "Mac OS X" there will be a version number.</p>
+
+<ul>
+<li>If it starts with 10.12, you have <strong>Sierra</strong>.</li>
+<li>If it starts with 10.11, you have <strong>El Capitan</strong>.</li>
+<li>If it starts with 10.10, you have <strong>Yosemite</strong>.</li>
+<li>If it starts with 10.9, you have <strong>Mavericks</strong>.</li>
+<li>If it starts with 10.8, you have <strong>Mountain Lion</strong>.</li>
+<li>If it starts with 10.7, you have <strong>Lion</strong>.</li>
+<li>If it starts with 10.6, you have <strong>Snow Leopard</strong>.</li>
+<li>If it starts with 10.5, you have <strong>Leopard</strong>.</li>
+<li>If it starts with 10.4, you have <strong>Tiger</strong>.</li>
+<li>If it starts with 10.3, you have <strong>Panther</strong>.</li>
+</ul>
+</li>
+<li><p>Write down the Mac OS X version you have.</p></li>
+<li>
+<p>In addition, to the right of the "Processor", there will be the a processor type.</p>
+
+<ul>
+<li>If it ends with <strong>Intel Core i7</strong>, <strong>Intel Core i5</strong>, or <strong>Intel Core i3</strong>, you are good to go.</li>
+<li>If it ends with <strong>Intel Core 2 Duo</strong>, you are good to go.</li>
+<li>If it ends with <strong>Intel Core Duo</strong> or something else, you are <strong>NOT</strong> good to go.  Please flag down a volunteer.</li>
+</ul>
+</li>
+<li><p>Once complete, you may close the "About This Mac" window.</p></li>
+</ul>
+
+<p>Below is an example.</p>
+
+<p><img src="img/AboutThisMac.png" alt="OS X Snow Leopard"></p>
+</div></blockquote>
+</div>
+<a name="step2"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4802" name="big_checkbox_4802" type="checkbox" value="valuable"><label for="big_checkbox_4802"></label><span class="prefix">Step 2: </span>Choose your instructions</h1>
+<blockquote>
+<a name="step2-1"></a><h1 class="option">
+<span>Option 2.1: </span>Sierra/El Capitan/Yosemite/Mavericks/Mountain Lion/Lion/Snow Leopard</h1>
+<blockquote><p class="link">Go on to <a class="link" href="osx_rvm">OS X RVM</a></p></blockquote>
+<a name="step2-2"></a><h1 class="option">
+<span>Option 2.2: </span>Earlier than Snow Leopard</h1>
+<blockquote>
+<div class="message important vertical-centerer">
+<i class="fa fa-exclamation-circle fa-3x"></i><div class="vertically-centered">
+<p>You should try upgrading to at least <strong>Snow Leopard</strong>. Apple doesn't sell it the Apple store anymore, so you'll have to <a href="http://store.apple.com/us/product/MC573Z/A/mac-os-x-106-snow-leopard">buy it from them online</a> or find a copy from a friend.</p>
+</div>
+</div>
+<div class="message">
+<p>It may be possible to get Ruby and Rails installed if your OS is older than Snow Leopard, but you're likely to encounter a lot of tough roadblocks that will require some intense Googling.</p>
+</div>
+</blockquote>
+</blockquote>
+</div>
+</div>
+<div class="back">Back to <a class="back" href="deploy_a_rails_app">Deploy A Rails App</a>
+</div></main><footer><p>Going through this curriculum on your own? Get help on <a href="http://discourse.bridgefoundry.org/c/railsbridge-help" target="_blank">our Discourse forum</a>, where RailsBridge volunteers can answer your questions.</p>
+<p>If you have a suggestion for improving the docs, please make a <a href="https://github.com/railsbridge/docs">pull request </a>or <a href="https://github.com/railsbridge/docs/issues/new">drop us a note </a>via GitHub Issues (no technical knowledge required).</p>
+<p>Source: <a href="https://github.com/railsbridge/docs">https://github.com/railsbridge/docs</a></p></footer>
+</body>
+</html>
+◊áﬂ¶ô#           X…>=äµ’X…L   2    :http://docs.railsbridge.org/installfest/macintosh request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 15 Mar 2017 13:13:49 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: public, max-age=3600
+Expires: Wed, 15 Mar 2017 14:13:49 GMT
+Content-Length: 8589
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: thin
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 5 predictor::http://docs.railsbridge.org/assets/application.js 1,1,0,0 predictor::http://docs.railsbridge.org/assets/application.css 1,1,0,0 predictor::http://docs.railsbridge.org/installfest/img/AboutThisMac.png 1,1,0,0 predictor::http://www.google-analytics.com/analytics.js 1,1,0,0 predictor::http://www.google-analytics.com/r/collect?v=1&_v=j49&a=163805885&t=pageview&_s=1&dl=http%3A%2F%2Fdocs.railsbridge.org%2Finstallfest%2Fmacintosh&ul=en-za&de=UTF-8&dt=Macintosh%20-%20Installfest&sd=24-bit&sr=1600x900&vp=1270x717&je=0&_u=AACAAEABI~&jid=77804788&gjid=1480947765&cid=1311582708.1489501183&tid=UA-40977319-4&_r=1&z=770886099 1,1,0,0   !ç

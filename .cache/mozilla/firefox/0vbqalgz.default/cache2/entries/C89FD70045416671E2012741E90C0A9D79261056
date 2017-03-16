@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Docs - Docs</title>
+<script src="/assets/application.js"></script><link href="/assets/application.css" rel="stylesheet">
+</head>
+<body class="no-toc">
+<nav class="top cf" role="navigation"><div class="navbar-header cf title"><a href="/docs"><span class="brand">RailsBridge </span>Docs</a></div>
+<ul class="navbar-nav nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="/flags/US.png"></a><ul class="flags dropdown-menu">
+<li><a href="http://docs.railsbridge.org"><img src="/flags/US.png"></a></li>
+<li><a href="http://es.railsbridge.org"><img src="/flags/ES.png"></a></li>
+<li><a href="http://zh-tw.railsbridge.org"><img src="/flags/ZH-TW.png"></a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">sites</a><ul class="dropdown-menu">
+<li class="category">Setup</li>
+<li><a href="/installfest/">Installfest</a></li>
+<li class="category">Rails</li>
+<li><a href="/intro-to-rails/">Intro To Rails</a></li>
+<li><a href="/job-board/">Job Board</a></li>
+<li><a href="/message-board/">Message Board</a></li>
+<li class="category">Frontend</li>
+<li><a href="/frontend/">Frontend</a></li>
+<li><a href="/javascript-snake-game/">Javascript Snake Game</a></li>
+<li><a href="/javascript-to-do-list/">Javascript To Do List</a></li>
+<li><a href="/javascript-to-do-list-with-react/">Javascript To Do List With React</a></li>
+<li class="category">Ruby</li>
+<li><a href="/learn-to-code/">Learn To Code</a></li>
+<li><a href="/ruby/">Ruby</a></li>
+<li class="category">Other stuff</li>
+<li class="current">Docs</li>
+<li><a href="/workshop/">Workshop</a></li>
+</ul>
+</li>
+<li class="show-when-small"><a data-toggle-selector="#table_of_contents" href="#">toc</a></li>
+<li class="hidden-sm"><a href="docs/src">src</a></li>
+<li class="hidden-sm"><a href="https://github.com/railsbridge/docs/blob/master/sites/en/docs/docs.step">git</a></li>
+</ul></nav><div class="toc page-list" id="table_of_contents">
+<ul><li class="collapsable">
+<span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span><span class="current">Docs</span><ul>
+<li class=""><a href="/installfest">Installfest</a></li>
+<li class=""><a href="/intro-to-rails">Intro To Rails</a></li>
+<li class=""><a href="/job-board">Job Board</a></li>
+<li class=""><a href="/message-board">Message Board</a></li>
+<li class=""><a href="/frontend">Frontend</a></li>
+<li class=""><a href="/javascript-snake-game">Javascript Snake Game</a></li>
+<li class=""><a href="/javascript-to-do-list">Javascript To Do List</a></li>
+<li class=""><a href="/javascript-to-do-list-with-react">Javascript To Do List With React</a></li>
+<li class=""><a href="/learn-to-code">Learn To Code</a></li>
+<li class=""><a href="/ruby">Ruby</a></li>
+<li class=""><a href="/workshop">Workshop</a></li>
+</ul>
+</li></ul>
+<span class="expand-all"><i class="fa fa-arrows-alt"></i>Expand All</span>
+</div>
+<main><h1 class="doc_title">Docs</h1>
+<div class="doc">
+<div class="message">
+<p>This site is maintained by RailsBridge volunteers. If you find something that could be improved, please make a <a href="https://github.com/railsbridge/docs">pull request</a> or <a href="https://github.com/railsbridge/docs/issues/new">drop us a note</a> via GitHub Issues (no technical knowledge required).</p>
+
+<p>Going through this curriculum on your own? You can get help on <a href="http://discourse.bridgefoundry.org/c/railsbridge-help" target="_blank">our Discourse forum</a>. (Volunteers to answer questions always needed, too!)</p>
+</div>
+<h1>Setup</h1>
+<div class="site-desc">
+<h2><a href="/installfest">Installfest</a></h2>
+<div>
+<p>Instructions for installing Ruby and Rails on your computer. You need to complete these steps before starting a Rails workshop!</p>
+</div>
+</div>
+<h1>Rails</h1>
+<div class="site-desc">
+<h2><a href="/intro-to-rails">Intro To Rails</a></h2>
+<div>
+<p>The "classic" RailsBridge curriculum (Suggestotron). Takes you step-by-step through making a Rails app, one command at a time, using helpers like <code>rails generate scaffold</code>, and deploying that app to the Internet.</p>
+</div>
+</div>
+<div class="site-desc">
+<h2><a href="/job-board">Job Board</a></h2>
+<div>
+<p>Build a simple job board from scratch with a little less of the magic of Rails scaffolding. This curriculum is great for a second or third RailsBridge attendee or for students who want to focus on how the app is wired together. (This curriculum doesn't include deploying to the Internet.)</p>
+</div>
+</div>
+<div class="site-desc">
+<h2><a href="/message-board">Message Board</a></h2>
+<div>
+<p>Build a message board! This curriculum is for students who have completed the Suggestotron and the Job Board curricula. This curriculum is a challenge because it won't tell you what to type in!</p>
+</div>
+</div>
+<h1>Frontend</h1>
+<div class="site-desc">
+<h2><a href="/frontend">Frontend</a></h2>
+<div>
+<p>HTML + CSS for beginners. Make a website, no server required!</p>
+</div>
+</div>
+<h1>Javascript</h1>
+<div class="site-desc">
+<h2><a href="/javascript-snake-game">Javascript Snake Game</a></h2>
+<div>
+<p>A beginner Javascript specific curriculum that walks you through building a simple game.</p>
+</div>
+</div>
+<div class="site-desc">
+<h2><a href="/javascript-to-do-list">Javascript To Do List</a></h2>
+<div>
+<p>An intermediate all JavaScript curriculum that builds a simple to do list application using AJAX and jQuery.</p>
+</div>
+</div>
+<div class="site-desc">
+<h2><a href="/javascript-to-do-list-with-react">Javascript To Do List With React</a></h2>
+<div>
+<p>An advanced all JavaScript curriculum that builds a simple to do list application using AJAX, jQuery, and React. Meant for
+students with some exposure to JavaScript.</p>
+</div>
+</div>
+<h1>Ruby</h1>
+<div class="site-desc">
+<h2><a href="/learn-to-code">Learn To Code</a></h2>
+<div>
+<p>A course which teaches how to code from the ground up, using Alex's <a href="http://codelikethis.com/lessons/learn_to_code">Learn To Code In Ruby</a> curriculum. It's geared towards people who may never have written code before and teaches just enough Ruby to get across basic principles like variables, objects, and the command line.</p>
+</div>
+</div>
+<div class="site-desc">
+<h2><a href="/ruby">Ruby</a></h2>
+<div>
+<p>A ruby-specific curriculum, expanded from the "Ruby for Beginners" slide deck. Still new, with room for your contributions.</p>
+</div>
+</div>
+<h1>Other</h1>
+<div class="site-desc">
+<h2><a href="/workshop">Workshop</a></h2>
+<div>
+<p>The Railsbridge junkyard! Slide decks for opening/closing presentations, teacher training.</p>
+</div>
+</div>
+<div class="message">
+<h1>RailsBridge curriculum-related FAQ</h1>
+
+<h3>Can I use the RailsBridge curricula at my event?</h3>
+
+<p>Anyone can use this site! It's under a Creative Commons license (<a href="http://creativecommons.org/licenses/by/3.0/">CC-BY,  specifically</a>), which means you're welcome to share, remix, or use our content commercially. We just ask for attribution.</p>
+
+<p>Slightly different: if you're organizing an event and wonder if it could be considered a RailsBridge Workshop, we have two requirements:</p>
+
+<ul>
+<li>The event should be free of charge.</li>
+<li>The event should target a group of people that is underrepresented in tech, such as LGBTQ folks, women, black or latinx people, or others.</li>
+</ul>
+
+<p>If you're not doing those two things, you can totally still use the site, we just ask that you not call your event a RailsBridge workshop.
+(Charity workshops have used "Rails Workshop featuring the RailsBridge curriculum" in the past, which is neat.)</p>
+
+<h3>I want to help, but I don't know how.</h3>
+
+<p>First, <a href="https://github.com">make a GitHub account</a>. Then, <a href="https://github.com/railsbridge/docs/issues">create an issue</a> with the idea you have. We'll help you turn it into reality (assuming it's in line with our lofty goals :D).</p>
+
+<p>Don't know what you could work on? Browse the <a href="https://github.com/railsbridge/docs/issues">issues list</a> and the <a href="https://github.com/railsbridge/docs/wiki/RailsBridge-Volunteer-Opportunities">Volunteer Opportunities List</a>. Those have lots of ideas.</p>
+
+<h3>I have a different question about RailsBridge.</h3>
+
+<p>The <a href="http://www.railsbridge.org">RailsBridge website</a> probably has an answer!</p>
+</div>
+</div></main><footer><p>Going through this curriculum on your own? Get help on <a href="http://discourse.bridgefoundry.org/c/railsbridge-help" target="_blank">our Discourse forum</a>, where RailsBridge volunteers can answer your questions.</p>
+<p>If you have a suggestion for improving the docs, please make a <a href="https://github.com/railsbridge/docs">pull request </a>or <a href="https://github.com/railsbridge/docs/issues/new">drop us a note </a>via GitHub Issues (no technical knowledge required).</p>
+<p>Source: <a href="https://github.com/railsbridge/docs">https://github.com/railsbridge/docs</a></p></footer>
+</body>
+</html>
+$o¢)&é      X B…X B…=ãsêX N•   "    :http://docs.railsbridge.org/docs/ request-method GET response-head HTTP/1.1 200 OK
+Date: Thu, 16 Mar 2017 07:36:53 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: public, max-age=3600
+Expires: Thu, 16 Mar 2017 08:36:54 GMT
+Content-Length: 9110
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: thin
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 5 predictor::http://docs.railsbridge.org/assets/application.js 1,1,1489650377,0 predictor::http://docs.railsbridge.org/assets/application.css 1,1,1489650377,0 predictor::http://www.google-analytics.com/analytics.js 1,1,1489650377,0 predictor::http://www.google-analytics.com/r/collect?v=1&_v=j49&a=827746193&t=pageview&_s=1&dl=http%3A%2F%2Fdocs.railsbridge.org%2Fdocs%2F&dr=http%3A%2F%2Fwww.railsbridge.org%2F&ul=en-za&de=UTF-8&dt=Docs%20-%20Docs&sd=24-bit&sr=1600x900&vp=1270x717&je=0&_u=AACAAEABI~&jid=1538753788&gjid=1910350145&cid=1311582708.1489501183&tid=UA-40977319-4&_r=1&z=1878583097 1,1,0,0 necko:classified 1 predictor::http://www.google-analytics.com/collect?v=1&_v=j49&a=1615876489&t=pageview&_s=1&dl=http%3A%2F%2Fdocs.railsbridge.org%2Fdocs%2F&dr=http%3A%2F%2Fwww.railsbridge.org%2F&ul=en-za&de=UTF-8&dt=Docs%20-%20Docs&sd=24-bit&sr=1600x900&vp=1270x717&je=0&_u=AACAAEABI~&jid=&gjid=&cid=1311582708.1489501183&tid=UA-40977319-4&z=141815193 1,1,1489650377,0   #ñ

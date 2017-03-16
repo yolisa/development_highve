@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>OS X RVM - Installfest</title>
+<script src="/assets/application.js"></script><link href="/assets/application.css" rel="stylesheet">
+</head>
+<body>
+<nav class="top cf" role="navigation"><div class="navbar-header cf title"><a href="/installfest"><span class="brand">RailsBridge </span>Installfest</a></div>
+<ul class="navbar-nav nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="/flags/US.png"></a><ul class="flags dropdown-menu">
+<li><a href="http://docs.railsbridge.org"><img src="/flags/US.png"></a></li>
+<li><a href="http://es.railsbridge.org"><img src="/flags/ES.png"></a></li>
+<li><a href="http://zh-tw.railsbridge.org"><img src="/flags/ZH-TW.png"></a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">sites</a><ul class="dropdown-menu">
+<li class="category">Setup</li>
+<li class="current">Installfest</li>
+<li class="category">Rails</li>
+<li><a href="/intro-to-rails/">Intro To Rails</a></li>
+<li><a href="/job-board/">Job Board</a></li>
+<li><a href="/message-board/">Message Board</a></li>
+<li class="category">Frontend</li>
+<li><a href="/frontend/">Frontend</a></li>
+<li><a href="/javascript-snake-game/">Javascript Snake Game</a></li>
+<li><a href="/javascript-to-do-list/">Javascript To Do List</a></li>
+<li><a href="/javascript-to-do-list-with-react/">Javascript To Do List With React</a></li>
+<li class="category">Ruby</li>
+<li><a href="/learn-to-code/">Learn To Code</a></li>
+<li><a href="/ruby/">Ruby</a></li>
+<li class="category">Other stuff</li>
+<li><a href="/docs/">Docs</a></li>
+<li><a href="/workshop/">Workshop</a></li>
+</ul>
+</li>
+<li class="show-when-small"><a data-toggle-selector="#table_of_contents" href="#">toc</a></li>
+<li class="hidden-sm"><a href="osx_rvm/src">src</a></li>
+<li class="hidden-sm"><a href="https://github.com/railsbridge/docs/blob/master/sites/en/installfest/osx_rvm.step">git</a></li>
+</ul></nav><div class="toc page-list" id="table_of_contents">
+<ul>
+<li class="collapsable closed">
+<a href="/installfest/installfest"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Installfest</a><ul><li class=""><a href="/installfest/editors">Editors</a></li></ul>
+</li>
+<li class="collapsable">
+<a href="/installfest/choose_your_operating_system"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Choose Your Operating System</a><ul>
+<li class="collapsable">
+<a href="/installfest/macintosh"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Macintosh</a><ul><li class="collapsable">
+<span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span><span class="current">OS X RVM</span><ul><li class="collapsable closed">
+<a href="/installfest/install_xcode"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Install Xcode</a><ul>
+<li class=""><a href="/installfest/install_xcode_command_line_tools">Install Xcode Command Line Tools</a></li>
+<li class=""><a href="/installfest/install_xcode_from_app_store">Install Xcode From App Store</a></li>
+<li class=""><a href="/installfest/install_xcode_from_dvd">Install Xcode From DVD</a></li>
+</ul>
+</li></ul>
+</li></ul>
+</li>
+<li class=""><a href="/installfest/windows">Windows</a></li>
+<li class=""><a href="/installfest/linux">Linux</a></li>
+</ul>
+</li>
+<li class=""><a href="/installfest/configure_git">Configure Git</a></li>
+<li class=""><a href="/installfest/create_an_ssh_key">Create An SSH Key</a></li>
+<li class="collapsable closed">
+<a href="/installfest/create_a_heroku_account"><span class="toggler"><i class="fa fa-plus-square-o"></i><i class="fa fa-minus-square-o"></i></span>Create A Heroku Account</a><ul><li class=""><a href="/installfest/create_a_github_account">Create A Github Account</a></li></ul>
+</li>
+<li class=""><a href="/installfest/create_a_rails_app">Create A Rails App</a></li>
+<li class=""><a href="/installfest/deploy_a_rails_app">Deploy A Rails App</a></li>
+<li class=""><a href="/installfest/get_a_sticker">Get A Sticker</a></li>
+<li class=""><a href="/installfest/clean_up">Clean Up</a></li>
+</ul>
+<h1>Other Pages</h1>
+<ul><li class=""><a href="/installfest/glossary">Glossary</a></li></ul>
+<span class="expand-all"><i class="fa fa-arrows-alt"></i>Expand All</span>
+</div>
+<main><h1 class="doc_title">OS X RVM</h1>
+<div class="doc">
+<a name="step1"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4803" name="big_checkbox_4803" type="checkbox" value="valuable"><label for="big_checkbox_4803"></label><span class="prefix">Step 1: </span>Open Terminal</h1>
+<blockquote>
+<div class="message">
+<p>Look for <strong>Terminal.app</strong> inside Applications -&gt; Utilities, or use Spotlight search (Command + Space Bar) to find it.</p>
+</div>
+<div class="message">
+<p>Add it to your dock; you'll be using it a lot. (To add it to the dock, click and hold the dock icon once Terminal is open. Select options -&gt; keep in dock.)</p>
+</div>
+<div class="message tip vertical-centerer">
+<i class="fa fa-info-circle fa-3x"></i><div class="vertically-centered">
+<p>Arrange your windows so that Terminal and your web browser are next to each other. You will want to <em>read</em> from your browser and <em>type into</em> your terminal <em>at the same time</em>.</p>
+</div>
+</div>
+</blockquote>
+</div>
+<a name="step2"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4804" name="big_checkbox_4804" type="checkbox" value="valuable"><label for="big_checkbox_4804"></label><span class="prefix">Step 2: </span>Install A Compiler (XCode or GCC)</h1>
+<blockquote><p class="link">Go on to <a class="link" href="install_xcode">Install Xcode</a></p></blockquote>
+</div>
+<a name="step3"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4805" name="big_checkbox_4805" type="checkbox" value="valuable"><label for="big_checkbox_4805"></label><span class="prefix">Step 3: </span>Install Homebrew</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</pre>
+</div>
+<div class="message">
+<p>You may have to press 'ENTER' when prompted and type in your password.</p>
+</div>
+<div class="message important vertical-centerer">
+<i class="fa fa-exclamation-circle fa-3x"></i><div class="vertically-centered">
+<p>If that doesn't work, visit <a href="https://github.com/Homebrew/homebrew/wiki/installation">https://github.com/Homebrew/homebrew/wiki/installation</a> and follow the instructions there.</p>
+</div>
+</div>
+<div class="verify">
+<h1>Verify </h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>brew -v</pre>
+</div>
+<div class="result fuzzy-result">
+<span>Approximate expected result:</span><pre>Homebrew 0.9<span class="fuzzy-lightened">.5</span></pre>
+<div class="fuzzy-hint">The greyed-out text may differ and is not important.</div>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+<a name="step4"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4806" name="big_checkbox_4806" type="checkbox" value="valuable"><label for="big_checkbox_4806"></label><span class="prefix">Step 4: </span>Install Git</h1>
+<blockquote>
+<div class="message">
+<p>Next we'll install Git, the most popular version control system in the Ruby world:</p>
+</div>
+<div class="console">
+<span>Type this in the terminal:</span><pre>git --version</pre>
+</div>
+<div class="result fuzzy-result">
+<span>Approximate expected result:</span><pre>git version <span class="fuzzy-lightened">2.x.x</span></pre>
+<div class="fuzzy-hint">The greyed-out text may differ and is not important.</div>
+</div>
+<div class="message">
+<p>If you see that output, you have Git. <a href="#install-rvm">Move on to the next step.</a></p>
+</div>
+<div class="console">
+<span>Otherwise, type this in the terminal:</span><pre>brew install git</pre>
+</div>
+<div class="verify">
+<h1>Verify </h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>git --version</pre>
+</div>
+<div class="result fuzzy-result">
+<span>Approximate expected result:</span><pre>git version <span class="fuzzy-lightened">2.x.x</span></pre>
+<div class="fuzzy-hint">The greyed-out text may differ and is not important.</div>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+<a name="install-rvm"></a><a name="step5"></a><a name="install_rvm_and_ruby"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4807" name="big_checkbox_4807" type="checkbox" value="valuable"><label for="big_checkbox_4807"></label><span class="prefix">Step 5: </span>Install RVM, the Ruby Version Manager </h1>
+<blockquote>
+<div class="message">
+<p>RVM stands for Ruby Version Manager and is the easiest way to install and manage Ruby.  The <a href="https://rvm.io/rvm/install">official RVM install instructions</a> are available here, but this should work for you:</p>
+</div>
+<a name="step5-1"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4808" name="big_checkbox_4808" type="checkbox" value="valuable"><label for="big_checkbox_4808"></label><span class="prefix">Step 5.1: </span>Install RVM</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>curl -L get.rvm.io | bash -s stable</pre>
+</div>
+<div class="message">
+<p>This will download and install RVM.</p>
+</div>
+<div class="message important vertical-centerer">
+<i class="fa fa-exclamation-circle fa-3x"></i><div class="vertically-centered"><div class="message">
+<p>You might see an error like "<strong>GPG signature verification failed</strong>"</p>
+
+<p>If so, run the suggested command to add RVM's GPG keys:</p>
+
+<p><code>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3</code>"</p>
+
+<p>(the command may start with <code>gpg</code> or <code>gpg2</code> -- use whichever was provided in the RVM error message)</p>
+
+<p>Afterward, try installing RVM again:</p>
+
+<p><code>curl -L get.rvm.io | bash -s stable</code></p>
+</div></div>
+</div>
+</blockquote>
+</div>
+<a name="step5-2"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4809" name="big_checkbox_4809" type="checkbox" value="valuable"><label for="big_checkbox_4809"></label><span class="prefix">Step 5.2: </span>Configure your shell</h1>
+<blockquote>
+<div class="message">
+<p>Every time you open a new terminal window, rvm will be active inside it. Close your terminal window and open a new one.</p>
+</div>
+<div class="verify">
+<h1>Verify </h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>type rvm | head -1</pre>
+</div>
+<div class="result">
+<span>Expected result:</span><pre>rvm is a function</pre>
+</div>
+<div class="console">
+<span>Type this in the terminal:</span><pre>rvm -v</pre>
+</div>
+<div class="result fuzzy-result">
+<span>Approximate expected result:</span><pre>rvm 1<span class="fuzzy-lightened">.x.x (stable) by Wayne E. Seguin (wayneeseguin@gmail.com), Michal Papis &lt;mpapis@gmail.com&gt; [https://rvm.io/]</span></pre>
+<div class="fuzzy-hint">The greyed-out text may differ and is not important.</div>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+<a name="step6"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4810" name="big_checkbox_4810" type="checkbox" value="valuable"><label for="big_checkbox_4810"></label><span class="prefix">Step 6: </span>Configure RVM to use Homebrew</h1>
+<blockquote><div class="console">
+<span>Type this in the terminal:</span><pre>rvm autolibs homebrew</pre>
+</div></blockquote>
+</div>
+<a name="step7"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4811" name="big_checkbox_4811" type="checkbox" value="valuable"><label for="big_checkbox_4811"></label><span class="prefix">Step 7: </span>Install Ruby</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>rvm install 2.3
+</pre>
+</div>
+<div class="message">
+<p>This downloads and compiles Ruby, which takes a while.</p>
+</div>
+<div class="console">
+<span>Type this in the terminal:</span><pre>rvm use 2.3
+rvm --default use 2.3
+</pre>
+</div>
+<div class="verify">
+<h1>Verify </h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>ruby -v</pre>
+</div>
+<div class="result fuzzy-result">
+<span>Approximate expected result:</span><pre>ruby 2.3<span class="fuzzy-lightened">.0p0 (2014-12-25 revision 49005) [x86_64-darwin13]</span></pre>
+<div class="fuzzy-hint">The greyed-out text may differ and is not important.</div>
+</div>
+</blockquote>
+</div>
+<div>
+<h1>Troubleshooting</h1>
+<div class="message important vertical-centerer">
+<i class="fa fa-exclamation-circle fa-3x"></i><div class="vertically-centered">
+<p><strong>If <code>rvm install 2.3</code> says <code>autoreconf was not found in the PATH</code></strong></p>
+<div>
+<div class="half-width">
+<strong>Mac OS</strong><div class="console">
+<span>Type this in the terminal:</span><pre>brew install automake</pre>
+</div>
+</div>
+<div class="half-width">
+<strong>Ubuntu Linux</strong><div class="console">
+<span>Type this in the terminal:</span><pre>sudo apt-get install automake</pre>
+</div>
+</div>
+</div>
+<div class="message">
+<p>Once that completes, retry <code>rvm install 2.3</code></p>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<a name="step8"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4812" name="big_checkbox_4812" type="checkbox" value="valuable"><label for="big_checkbox_4812"></label><span class="prefix">Step 8: </span>Install Rails</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>gem install rails</pre>
+</div>
+<div class="verify">
+<h1>Verify </h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>rails -v</pre>
+</div>
+<div class="result fuzzy-result">
+<span>Approximate expected result:</span><pre>Rails 5.<span class="fuzzy-lightened">0.x</span></pre>
+<div class="fuzzy-hint">The greyed-out text may differ and is not important.</div>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+<a name="step9"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4813" name="big_checkbox_4813" type="checkbox" value="valuable"><label for="big_checkbox_4813"></label><span class="prefix">Step 9: </span>Install Atom</h1>
+<blockquote>
+<div class="message">
+<p>We'll be using the Atom text editor during the workshop, though you are free to use a different editor if you prefer. It must be a plain-text editor, such as vi or TextMate.</p>
+</div>
+<div class="message important vertical-centerer">
+<i class="fa fa-exclamation-circle fa-3x"></i><div class="vertically-centered">
+<p>Microsoft Word and other word processing programs, including TextEdit and Notepad, will not work.</p>
+
+<p>When in doubt, use Atom.</p>
+</div>
+</div>
+<a name="step9-1"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4814" name="big_checkbox_4814" type="checkbox" value="valuable"><label for="big_checkbox_4814"></label><span class="prefix">Step 9.1: </span>Download Atom</h1>
+<blockquote><div class="message">
+<p>Download the <a href="https://atom.io/download/mac">Atom installer</a>.</p>
+</div></blockquote>
+</div>
+<a name="step9-2"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4815" name="big_checkbox_4815" type="checkbox" value="valuable"><label for="big_checkbox_4815"></label><span class="prefix">Step 9.2: </span>Find the downloaded file in Finder</h1>
+<blockquote><div class="message">
+<p>If you weren't asked where to save it, it's probably in the Downloads folder.</p>
+</div></blockquote>
+</div>
+<a name="step9-3"></a><div class="step">
+<h1>
+<input class="big_checkbox" id="big_checkbox_4816" name="big_checkbox_4816" type="checkbox" value="valuable"><label for="big_checkbox_4816"></label><span class="prefix">Step 9.3: </span>Extract Atom and move it to your Applications folder.</h1>
+<blockquote>
+<div class="message">
+<p>Double click the Atom <code>.zip</code> file to extract it. Drag Atom into your Applications folder.</p>
+</div>
+<img alt="Animation of extracting the Atom zip file and moving the contents to the Applications folder" src="img/install_atom_mac.gif">
+</blockquote>
+</div>
+</blockquote>
+</div>
+<div class="verify">
+<h1>Verify successful installation</h1>
+<blockquote>
+<div class="console">
+<span>Type this in the terminal:</span><pre>git --version</pre>
+</div>
+<div class="result fuzzy-result">
+<span>Approximate expected result:</span><pre>git version <span class="fuzzy-lightened">2.x.x</span></pre>
+<div class="fuzzy-hint">The greyed-out text may differ and is not important.</div>
+</div>
+<div class="console">
+<span>Type this in the terminal:</span><pre>which ruby</pre>
+</div>
+<div class="result fuzzy-result">
+<span>Approximate expected result:</span><pre>/Users/<span class="fuzzy-lightened">alex</span>/.rvm/rubies/ruby-<span class="fuzzy-lightened">2.0.0-p247</span>/bin/ruby</pre>
+<div class="fuzzy-hint">The greyed-out text may differ and is not important.</div>
+</div>
+<div class="console">
+<span>Type this in the terminal:</span><pre>which rails</pre>
+</div>
+<div class="result fuzzy-result">
+<span>Approximate expected result:</span><pre>/Users/<span class="fuzzy-lightened">alex</span>/.rvm/gems/ruby-<span class="fuzzy-lightened">2.0.0-p247</span>/bin/rails</pre>
+<div class="fuzzy-hint">The greyed-out text may differ and is not important.</div>
+</div>
+</blockquote>
+</div>
+<div class="step next_step">
+<h1><span class="prefix">Next Step:</span></h1>
+<p class="link">Go on to <a class="link" href="configure_git">Configure Git</a></p>
+</div>
+</div>
+<div class="back">Back to <a class="back" href="macintosh">Macintosh</a>
+</div></main><footer><p>Going through this curriculum on your own? Get help on <a href="http://discourse.bridgefoundry.org/c/railsbridge-help" target="_blank">our Discourse forum</a>, where RailsBridge volunteers can answer your questions.</p>
+<p>If you have a suggestion for improving the docs, please make a <a href="https://github.com/railsbridge/docs">pull request </a>or <a href="https://github.com/railsbridge/docs/issues/new">drop us a note </a>via GitHub Issues (no technical knowledge required).</p>
+<p>Source: <a href="https://github.com/railsbridge/docs">https://github.com/railsbridge/docs</a></p></footer>
+</body>
+</html>
+H–Vc:      XÉ>XÉ>=Šµ×XÉL   0    :http://docs.railsbridge.org/installfest/osx_rvm necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 15 Mar 2017 13:13:51 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: public, max-age=3600
+Expires: Wed, 15 Mar 2017 14:13:52 GMT
+Content-Length: 18625
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: thin
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 5 predictor::http://docs.railsbridge.org/assets/application.js 1,1,1489583632,0 predictor::http://docs.railsbridge.org/assets/application.css 1,1,1489583632,0 predictor::http://www.google-analytics.com/analytics.js 1,1,1489583632,0 predictor::http://www.google-analytics.com/collect?v=1&_v=j49&a=1549361849&t=pageview&_s=1&dl=http%3A%2F%2Fdocs.railsbridge.org%2Finstallfest%2Fosx_rvm&ul=en-za&de=UTF-8&dt=OS%20X%20RVM%20-%20Installfest&sd=24-bit&sr=1600x900&vp=1270x717&je=0&_u=AACAAEABI~&jid=&gjid=&cid=1311582708.1489501183&tid=UA-40977319-4&z=2055538508 1,1,1489583632,0 predictor::http://docs.railsbridge.org/installfest/img/install_atom_mac.gif 1,1,1489583632,0   HÁ

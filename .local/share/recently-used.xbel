@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/quirky30/README" added="2017-03-14T14:27:25Z" modified="2017-03-15T12:33:15Z" visited="2017-03-14T14:27:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-03-15T12:33:15Z" count="16"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2017-03-15T11:24:27Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/quirky30/~.bashrc" added="2017-03-15T09:03:11Z" modified="2017-03-15T09:18:46Z" visited="2017-03-15T09:03:11Z">
+    <title>~.bashrc</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/x-mod"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;totem %U&apos;" modified="2017-03-15T09:18:45Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-03-15T09:18:23Z" count="5"/>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2017-03-15T09:18:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/quirky30/C46A-2CCA" added="2017-03-15T09:25:24Z" modified="2017-03-15T12:33:27Z" visited="2017-03-15T09:25:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2017-03-15T12:33:27Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/quirky30/C46A-2CCA/ruby%20on%20rails.read%20me" added="2017-03-15T12:32:47Z" modified="2017-03-15T12:32:47Z" visited="2017-03-15T12:32:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-03-15T12:32:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/quirky30/C46A-2CCA/README" added="2017-03-15T12:32:54Z" modified="2017-03-15T12:32:54Z" visited="2017-03-15T12:32:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-03-15T12:32:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/quirky30" added="2017-03-15T12:33:44Z" modified="2017-03-15T12:33:44Z" visited="2017-03-15T12:33:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2017-03-15T12:33:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/quirky30/ruby" added="2017-03-15T12:56:45Z" modified="2017-03-15T12:56:45Z" visited="2017-03-15T12:56:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2017-03-15T12:56:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/quirky30" added="2017-03-15T13:12:32Z" modified="2017-03-15T13:12:32Z" visited="2017-03-15T13:12:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2017-03-15T13:12:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/quirky30/railsbridge" added="2017-03-15T13:15:43Z" modified="2017-03-15T13:15:43Z" visited="2017-03-15T13:15:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2017-03-15T13:15:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/quirky30/untitled" added="2017-03-15T13:35:37Z" modified="2017-03-15T13:35:37Z" visited="2017-03-15T13:35:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2017-03-15T13:35:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
